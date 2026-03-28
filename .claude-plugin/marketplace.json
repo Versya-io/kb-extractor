@@ -1,0 +1,22 @@
+{
+  "name": "kb-extractor",
+  "owner": {
+    "name": "Versya",
+    "url": "https://versya.io"
+  },
+  "description": "Scans your codebase and generates a structured knowledge base for AI support chatbots — including what your product cannot do, so your bot never hallucinates on impossible requests.",
+  "plugins": [
+    {
+      "name": "kb-extractor-plugin",
+      "source": {
+        "type": "path",
+        "path": "./plugins/kb-extractor-plugin"
+      },
+      "version": "1.0.0",
+      "description": "Scans your codebase and generates structured markdown KB files optimized for AI support chatbots. Extracts features, flows, constraints, and generates FAQ — including what is NOT possible, so your bot never says yes to impossible requests.",
+      "category": "documentation",
+      "tags": ["knowledge-base", "chatbot", "support", "documentation", "llm", "rag"],
+      "strict": true
+    }
+  ]
+}
