@@ -9,14 +9,15 @@
     {
       "name": "kb-extractor-plugin",
       "source": {
-        "source": "github",
-        "repo": "Versya-io/kb-extractor",
+        "source": "git-subdir",
+        "url": "https://github.com/Versya-io/kb-extractor.git",
         "path": "plugins/kb-extractor-plugin"
       },
       "version": "1.0.0",
       "description": "Scans your codebase and generates structured markdown KB files optimized for AI support chatbots. Extracts features, flows, constraints, and generates FAQ — including what is NOT possible, so your bot never says yes to impossible requests.",
       "category": "documentation",
-      "tags": ["knowledge-base", "chatbot", "support", "documentation", "llm", "rag"]
+      "tags": ["knowledge-base", "chatbot", "support", "documentation", "llm", "rag"],
+      "strict": false
     }
   ]
 }
