@@ -8,7 +8,12 @@
   },
   "license": "MIT",
   "keywords": ["knowledge-base", "chatbot", "support", "documentation", "llm", "rag", "constraints"],
-  "skills": [
-    "./skills/kb-extractor"
-  ]
+  "components": {
+    "skills": [
+      {
+        "name": "kb-extractor",
+        "path": "./skills/kb-extractor"
+      }
+    ]
+  }
 }
