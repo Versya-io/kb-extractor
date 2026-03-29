@@ -49,14 +49,30 @@ injection, large context, or RAG — with cost estimates per conversation volume
 **Manual install:**
 ```bash
 mkdir -p ~/.claude/skills/kb-extractor
-cp plugins/kb-extractor-plugin/skills/kb-extractor/SKILL.md \
-   ~/.claude/skills/kb-extractor/SKILL.md
+cp skills/kb-extractor/SKILL.md ~/.claude/skills/kb-extractor/SKILL.md
 ```
 
 Verify installation inside Claude Code:
 ```
 /skills
 ```
+
+---
+
+### Windows (WSL) note
+
+Claude Code on Windows runs inside WSL as `root`. If the marketplace install fails
+with a `Permission denied (publickey)` error, it means git is trying to use SSH
+instead of HTTPS. Fix it with:
+
+```bash
+sudo bash -c 'cat >> /root/.gitconfig << EOF
+[url "https://github.com/"]
+    insteadOf = git@github.com:
+EOF'
+```
+
+Then retry the install. This is a one-time setup per WSL environment.
 
 ---
 
